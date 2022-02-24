@@ -1,0 +1,36 @@
+type Movie {
+  id: String!
+  title: String!
+  rating: Float
+  description_intro: String
+  language: String
+  medium_cover_image: String
+  genres: [String]
+  postedAt: String!
+  updatedAt: String!
+}
+
+type Query {
+  movies: [Movie]!
+  movie(id: String!): Movie
+}
+
+type Mutation {
+  addMovie(
+    id: String!
+    title: String!
+    rating: Float
+    description_intro: String
+    language: String
+    medium_cover_image: String
+    genres: [String]
+    postedAt: String!
+    updatedAt: String!
+  ): Movie!
+
+  deleteMovie(id: Int!): Boolean!
+}
+
+type Subscription {
+  refreshMovies: [Movie]!
+}

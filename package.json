@@ -1,22 +1,24 @@
 {
-  "name": "movie-collection-server",
+  "name": "graphql-server",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "description": "movie-collection-server",
+  "description": "graphql server",
   "scripts": {
     "start": "nodemon --exec babel-node index.js"
   },
   "dependencies": {
-    "@babel/cli": "7.17.6",
-    "@babel/core": "7.17.5",
-    "@babel/node": "7.16.8",
-    "@babel/preset-env": "7.16.11",
-    "apollo-server": "3.6.3",
-    "apollo-server-express": "3.6.3",
+    "apollo-server": "3.5.0",
+    "apollo-server-express": "3.5.0",
     "graphql-yoga": "1.18.3",
-    "mongoose": "6.2.3",
-    "nodemon": "2.0.15",
+    "mongoose": "6.1.4",
     "uuid": "8.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.16.0",
+    "@babel/core": "7.16.0",
+    "@babel/node": "7.16.0",
+    "@babel/preset-env": "7.16.4",
+    "nodemon": "2.0.15"
   }
 }
